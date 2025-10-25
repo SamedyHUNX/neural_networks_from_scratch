@@ -5,7 +5,7 @@ class Layer_Input:
     # Forward pass
     def forward(self, inputs, training):
         self.output = inputs
-
+        
 # Dense layer
 class Layer_Dense:
     # Layer initialization
@@ -53,6 +53,14 @@ class Layer_Dense:
 
         # Gradient on values
         self.dinputs = np.dot(dvalues, self.weights.T)
+    # Retrive layer parameters
+    def get_parameters(self):
+        return self.weights, self.biases
+    # Set weights and biases in a layer instance
+    def set_parameters(self, weights, biases):
+        self.weights = weights
+        self.biases = biases
+
 
 # Dropout
 class Layer_Dropout:
