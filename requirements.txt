@@ -1,0 +1,11 @@
+# Core dependencies
+numpy>=1.19.0
+opencv-python>=4.5.0
+
+# Jupyter notebooks
+jupyter>=1.0.0
+notebook>=6.0.0
+ipykernel>=6.0.0
+
+# Optional: For visualization in notebooks
+matplotlib>=3.3.0
